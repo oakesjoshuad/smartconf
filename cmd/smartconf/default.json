@@ -1,0 +1,33 @@
+{
+	"autoboot": true,
+	"brand": "joyent",
+	"limit_priv": "default",
+	"image_uuid": "800db35c-5408-11eb-9792-872f658e7911",
+	"max_physical_memory": 512,
+	"hostname": "HOSTNAME",
+	"dns_domain": "DOMAIN",
+	"resolvers": [
+		"10.0.0.250"
+	],
+	"alias": "ALIAS",
+	"nics": [
+		{
+			"interface": "net0",
+			"nic_tag": "NICTAG",
+			"gateways": [
+				"10.0.0.253"
+			],
+			"netmask": "10.0.0.255",
+			"ips": [
+				"dhcp",
+				"addrconf"
+			],
+			"primary": true
+		}
+	],
+	"firewall_enabled": false,
+	"customer_metadata": {
+		"root_authorized_keys": "PUBLICKEY",
+		"user-script": "/usr/bin/mdata-get root_authorized_keys \u003e ~root/.ssh/authorized_keys"
+	}
+}
