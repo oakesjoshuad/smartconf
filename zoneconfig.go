@@ -67,3 +67,7 @@ func (zconf *ZoneConfig) JSON() ([]byte, error) {
 	return json.MarshalIndent(zconf, "", "\t")
 }
 
+func NewZoneConfig(image, alias, hostname string, memory int) *ZoneConfig {
+	return &ZoneConfig{
+	}
+}
